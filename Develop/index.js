@@ -25,10 +25,31 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'i',
+        name: 'install',
         message: 'What are the steps to install your project?',
     },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What are the instructions?'
+    },
 ];
+
+inquirer.prompt(questions).then((answers) => {
+    const content = `## ${answers.title}
+    
+    ## Description
+    ${answers.des1}
+    ${answers.des2}
+    ${answers.des3}
+
+    ## Installation
+    ${answers.install}
+
+    ## Usage
+    ${answers.usage}`
+}
+)
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
