@@ -56,7 +56,17 @@ const questions = [
 ];
 
 function generateContent(answers) {
-    return `# ${answers.title}
+    return `# ${answers.title} ![Build Passing](https://img.shields.io/badge/any_text-you_like-blue)
+
+    ## Table of Contents
+    - [Description](#description)
+    - [Problem](#problem)
+    - [Learning](#learning)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
     
     ## Description
     ${answers.des1}
@@ -80,7 +90,7 @@ function generateContent(answers) {
     ${answers.test}
     
     ## Questions
-    You can reach me at ${answers.github} ${answers.email} for any follow up Questions!`
+    You can reach me at ${answers.github} or ${answers.email} for any follow up Questions!`
 };
 
 // TODO: Create a function to write README file
