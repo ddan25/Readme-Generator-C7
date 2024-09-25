@@ -36,7 +36,7 @@ const questions = [
 ];
 
 function generateContent(answers) {
-    return `## ${answers.title}
+    return `# ${answers.title}
     
     ## Description
     ${answers.des1}
@@ -65,7 +65,7 @@ function writeReadMeFile(content) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(answers).then((answers) => {
+    inquirer.prompt(questions).then((answers) => {
         const content = generateContent(answers);
         writeReadMeFile(content);
     });
