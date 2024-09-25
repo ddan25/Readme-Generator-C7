@@ -65,40 +65,41 @@ function generateContent(answers) {
     
     return `# ${answers.title} ${badge}
 
-    ## Table of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Description
+${answers.des1}
+
+${answers.des2}
+
+${answers.des3}
+
+## Installation
+${answers.install}
+
+## Usage
+${answers.usage}
+
+## License
+${answers.license}
+
+## Contributing
+${answers.contribute}
     
-    ## Description
-    ${answers.des1}
-
-    ${answers.des2}
-
-    ${answers.des3}
-
-    ## Installation
-    ${answers.install}
-
-    ## Usage
-    ${answers.usage}
-
-    ## License
-    ${answers.license}
-
-    ## Contributing
-    ${answers.contribute}
+## Tests
+${answers.test}
     
-    ## Tests
-    ${answers.test}
-    
-    ## Questions
-    You can reach me at [${answers.github}](https://github.com/${answers.github}) or via email at ${answers.email} for any follow-up questions!`;
-};
+## Questions
+You can reach me at [${answers.github}](https://github.com/${answers.github}) or via email at ${answers.email} for any follow-up questions!`;
+}
+
 
 // TODO: Create a function to write README file
 function writeReadMeFile(content) {

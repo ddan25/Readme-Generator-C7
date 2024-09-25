@@ -1,4 +1,4 @@
-# README Generator ![Build Passing](https://img.shields.io/badge/Build_Passing-green)
+# readme genie ![Build Passing](https://img.shields.io/badge/Build_Passing-green)
 
 ## Table of Contents
 - [Description](#description)
@@ -10,26 +10,26 @@
 - [Questions](#questions)
 
 ## Description
-Motivation for this project was to work on my understanding of Node.js and the Inquirer package.
+get a good grade
 
-This project makes it so README files are much more easily created.
+easy readme's
 
-I learned much about Node.js as well as the customization and formatting of README files.
+readme
 
 ## Installation
-To install this project, you will need to download my GitHub repo, run it on VS Code, download the Inquirer package from the package.json, and then run `node index.js` in your terminal.
+repo, inquirer, then node
 
 ## Usage
-Once installed, you run `node index.js` and then answer all the prompted questions.
+answer Qs
 
 ## License
-I used an MIT license.
+mit
 
 ## Contributing
-You can contribute by downloading the GitHub repo and adding to it, as the repo is publicly open.
-
+repo
+    
 ## Tests
-I tested it by running it over and over again in my terminal until it worked properly.
-
+terminal
+    
 ## Questions
-You can reach me at [ddan25](https://github.com/ddan25) or via email at ddan25@gmail.com for any follow-up questions!
+You can reach me at [ddan](https://github.com/ddan) or via email at dan@email.com for any follow-up questions!
