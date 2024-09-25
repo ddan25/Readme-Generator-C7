@@ -33,6 +33,26 @@ const questions = [
         name: 'usage',
         message: 'What are the instructions?'
     },
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'How can others contribute?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What do you use for testing?'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?'
+    },
 ];
 
 function generateContent(answers) {
@@ -51,7 +71,16 @@ function generateContent(answers) {
     ${answers.install}
 
     ## Usage
-    ${answers.usage}`
+    ${answers.usage}
+
+    ## Contributing
+    ${answers.contribute}
+    
+    ## Tests
+    ${answers.test}
+    
+    ## Questions
+    You can reach me at ${answers.github} ${answers.email} for any follow up Questions!`
 };
 
 // TODO: Create a function to write README file
