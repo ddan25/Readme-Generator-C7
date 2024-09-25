@@ -90,7 +90,7 @@ function generateContent(answers) {
     ${answers.test}
     
     ## Questions
-    You can reach me at ${answers.github} or ${answers.email} for any follow up Questions!`
+    You can reach me at [${answers.github}](https://github.com/${answers.github}) or via email at ${answers.email} for any follow-up questions!`;
 };
 
 // TODO: Create a function to write README file
