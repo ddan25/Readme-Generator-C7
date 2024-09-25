@@ -5,28 +5,28 @@ import fs from 'fs';
 const questions = [
     {
         type: 'input',
-        name: '',
-        message: '',
+        name: 'title',
+        message: 'What is the title of your project?',
     },
     {
         type: 'input',
-        name: '',
-        message: '',
+        name: 'des1',
+        message: 'What was your motivation?',
     },
     {
         type: 'input',
-        name: '',
-        message: '',
+        name: 'des2',
+        message: 'What problem does this solve?',
     },
     {
         type: 'input',
-        name: '',
-        message: '',
+        name: 'des3',
+        message: 'What did you learn?',
     },
     {
         type: 'input',
-        name: '',
-        message: '',
+        name: 'i',
+        message: 'What are the steps to install your project?',
     },
 ];
 
