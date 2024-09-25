@@ -35,13 +35,16 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    const generateContent = 
-    `## ${answers.title}
+function generateContent(answers) {
+    return `## ${answers.title}
     
     ## Description
     ${answers.des1}
+
+    ## Problem
     ${answers.des2}
+
+    ## Learning
     ${answers.des3}
 
     ## Installation
@@ -49,7 +52,7 @@ inquirer.prompt(questions).then((answers) => {
 
     ## Usage
     ${answers.usage}`
-});
+};
 
 // TODO: Create a function to write README file
 function writeReadMeFile(content) {
