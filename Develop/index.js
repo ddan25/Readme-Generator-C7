@@ -36,7 +36,8 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then((answers) => {
-    const content = `## ${answers.title}
+    const content = 
+    `## ${answers.title}
     
     ## Description
     ${answers.des1}
@@ -48,11 +49,14 @@ inquirer.prompt(questions).then((answers) => {
 
     ## Usage
     ${answers.usage}`
-}
-)
+});
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile('README.md', content) {
+    fs.writeFile('README.md', content, (err) => {
+        err ? console.error(err) : console.log('README.md has been generated successfully!');
+    }
+)};
 
 // TODO: Create a function to initialize app
 function init() {}
