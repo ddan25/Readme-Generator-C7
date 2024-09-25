@@ -35,6 +35,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'license',
+        message: 'What license did you use?'
+    },
+    {
+        type: 'input',
         name: 'contribute',
         message: 'How can others contribute?',
     },
@@ -56,14 +61,15 @@ const questions = [
 ];
 
 function generateContent(answers) {
-    return `# ${answers.title} ![Build Passing](https://img.shields.io/badge/any_text-you_like-blue)
+    const badge = `![Build Passing](https://img.shields.io/badge/Build_Passing-green)`;
+    
+    return `# ${answers.title} ${badge}
 
     ## Table of Contents
     - [Description](#description)
-    - [Problem](#problem)
-    - [Learning](#learning)
     - [Installation](#installation)
     - [Usage](#usage)
+    - [License](#license)
     - [Contributing](#contributing)
     - [Tests](#tests)
     - [Questions](#questions)
@@ -71,10 +77,8 @@ function generateContent(answers) {
     ## Description
     ${answers.des1}
 
-    ## Problem
     ${answers.des2}
 
-    ## Learning
     ${answers.des3}
 
     ## Installation
@@ -82,6 +86,9 @@ function generateContent(answers) {
 
     ## Usage
     ${answers.usage}
+
+    ## License
+    ${answers.license}
 
     ## Contributing
     ${answers.contribute}
