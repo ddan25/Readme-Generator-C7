@@ -33,3 +33,7 @@ I tested it by running it over and over again in my terminal until it worked pro
 
 ## Questions
 You can reach me at [ddan25](https://github.com/ddan25) or via email at ddan25@gmail.com for any follow-up questions!
+
+GitHub Repo:https://github.com/ddan25/Readme-Generator-C7
+
+Recording:https://drive.google.com/file/d/1CyQl7Rk1iHS8r2hZS_ImU4blBlmrAc4-/view
